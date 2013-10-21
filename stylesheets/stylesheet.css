@@ -23,6 +23,12 @@ html,body{min-height:100%;height:100%}
     color-stop(0.85, rgb(113,42,134))
   );
 }
+.bg-pasties {
+  background-color: rgb(113,42,134);
+}
+.pasties-header {
+  padding-bottom: 40px !important;
+}
 .mainc{
   padding-top:20px;
 }
