@@ -1,4 +1,1 @@
-pasties.github.io
-=================
-
-website
+Website for the garðr projects
