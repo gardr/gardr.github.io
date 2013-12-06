@@ -4,42 +4,31 @@ html,body{min-height:100%;height:100%}
   max-width: none !important;
 }
 .liquid .body{
-  max-width:640px;
+  max-width:740px;
   margin:0 auto;
 }
 .header .inner{
-  height:160px;
-  background-image: linear-gradient(bottom, rgb(75,26,86) 18%, rgb(113,42,134) 85%);
-  background-image: -o-linear-gradient(bottom, rgb(75,26,86) 18%, rgb(113,42,134) 85%);
-  background-image: -moz-linear-gradient(bottom, rgb(75,26,86) 18%, rgb(113,42,134) 85%);
-  background-image: -webkit-linear-gradient(bottom, rgb(75,26,86) 18%, rgb(113,42,134) 85%);
-  background-image: -ms-linear-gradient(bottom, rgb(75,26,86) 18%, rgb(113,42,134) 85%);
-
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.18, rgb(75,26,86)),
-    color-stop(0.85, rgb(113,42,134))
-  );
+  height:60px;
+  background-color: rgb(88,88,88);
+  color: white;
 }
-.bg-pasties {
-  background-color: rgb(113,42,134);
+.bg-gardr {
+  background-color: rgb(88,88,88);
 }
-.pasties-header {
+.gardr-header {
   padding-bottom: 40px !important;
 }
 .mainc{
-  padding-top:20px;
+  padding-top:10px;
 }
-.pastiesbig{
-  background:transparent url("../images/pasties-small.png");
+.gardrbig{
+/*  background:transparent url("../images/gardr-small.png");
   position:relative;
   display: block;
   height: 147px;
   width: 200px;
   margin: 0 auto;
-  top:46px;
+  top:46px;*/
 }
 
 #forkme_banner {
@@ -50,41 +39,35 @@ html,body{min-height:100%;height:100%}
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: url('../images/blacktocat.png') #000 no-repeat 95% 50%;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
 }
 
-
-
-
-
-
 @media screen and (min-width:768px) {
-  .pastiesbig{
-    background:transparent url("../images/pasties.png");
+  .gardrbig{
+    background:transparent url("../images/gardr.png");
     background-size: 400px auto;
     height:298px;
     width:400px;
     top:40px;
     }
   .header .inner{
-    height: 270px;
+    height: 70px;
   }
   .mainc{
-    padding-top:60px;
-    padding-bottom:80px;
+    padding-top:20px;
+    padding-bottom:40px;
   }
 }
+/*
 @media screen and (-webkit-min-device-pixel-ratio: 2) , screen and (max-moz-device-pixel-ratio: 2) {
-    .pastiesbig{
-      background:transparent url("../images/pasties.png");
+    .gardrbig{
+      background:transparent url("../images/gardr.png");
       background-size:200px auto;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width:768px), screen and (max-moz-device-pixel-ratio: 2) and (min-width:768px) {
-    .pastiesbig{
-      background:transparent url("../images/pasties-x2.png");
+    .gardrbig{
+      background:transparent url("../images/gardr-x2.png");
       background-size:400px auto;
 }
+*/
