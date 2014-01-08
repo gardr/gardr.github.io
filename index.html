@@ -55,20 +55,32 @@
               View the presentation <a href="https://docs.google.com/presentation/d/1ia90ENFAPAQYvCQtWqXdSCtUV1xf1MBQUo3QIxBHD_U/edit?pli=1#slide=id.p">garðr - at a glance</a> for a quick intro
              </p>
              <hr>
-             <h2 class="slightlylargerlargefont">Gardr</h2>
-             <p>gardr is a simple library for taking external content and wrapping it inside an iframe to ensure that the host site always stays up, regardless of how the content behaves.</p>
-             <p>Check out the <a href="http://github.com/gardr/gardr">gardr repo</a> for the code and samples.</p>
-             <p>Below is a simple outline of how gardr works in the context of delivering adverts in a safe way</p>
+             <h2 class="slightlylargerlargefont">
+              <a href="http://github.com/gardr/gardr">Gardr</a>
+             </h2>
+             <p>gardr is a simple client library for taking external content and wrapping it inside an iframe to ensure that the host site always stays up, regardless of how the content behaves.</p>
              <!--p class="centerify">
               <a target="_blank" href="images/docs/pasitejs-diagram.png"><img src="images/docs/pasitejs-diagram_thumb.png" alt="gardr architecture overview"></a>
             </p-->
-             <h2 class="slightlylargerlargefont">Validator</h2>
+             <h2 class="slightlylargerlargefont">
+              <a href="http://github.com/gardr/validator">Validator</a>
+             </h2>
              <p>
-              <a href="http://github.com/gardr/validator">The validator</a> is the engine which runs the validation rules and checks. It uses PhantomJS to run the content with the configured rules and checks.
+              The validator module is the engine which runs the validation rules and checks. It uses <a href="http://phantomjs.org/">PhantomJS</a> to run the content with the configured rules and checks.
              </p>
-             <h2 class="slightlylargerlargefont">Validator web UI</h2>
-             <p><a href="http://github.com/gardr/validator-web">The validator web application</a> helps validate your content according to the rules you specify. Creators can validate their content to ensure it will render fast and without breaking the host site. It is designed to help the transition to HTML based rich media advertisements.
-              </p>
+             <h2 class="slightlylargerlargefont">
+              <a href="http://github.com/gardr/validator-web">Validator Web Application</a>
+             </h2>
+             <p>The validator web application helps validate your content according to the rules you specify. Creators can validate their content to ensure it will render fast and without breaking the host site. It is designed to help the transition to HTML based rich media advertisements.
+             </p>
+             <hr>
+             <h2 class="slightlylargerlargefont">Utility modules</h2>
+             <p>Below are the smaller modules which is used in different parts of the project. They can also be used in other context than as a part of garðr.
+             <ul>
+              <li><a href="https://github.com/gardr/iframe-params">Iframe-params</a></li>
+              <li>postMessage util</li>
+             </ul>
+             </p>
             </div>
           </div>
         </div>
