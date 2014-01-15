@@ -1,1 +1,1 @@
-Website for the garðr projects
+Website for the Garðr projects
