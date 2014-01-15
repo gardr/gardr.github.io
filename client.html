@@ -4,9 +4,12 @@
     <meta charset="utf-8">  
     <meta name="description" content="gardr.github.io : website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-    <title>gardr.github.io</title>
+    <title>Safe embedding with Garðr JavaScript library</title>
     <link rel="stylesheet" type="text/css" media="screen" href="http://dev.finncdn.no/bb/latest/css/so/so_core.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+<!--    <link rel="stylesheet" type="text/css" media="screen" href="http://cache.finn.no/styles/so/components/components.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cache.finn.no/styles/so/finn.css">-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
     <!--[if IE 9 ]>
       <link rel="stylesheet" type="text/css" media="screen" href="http://cache.finn.no/styles/so/ie9.css">
     <![endif]-->
@@ -34,7 +37,7 @@
           <div class="liquid">
             <div class="body">
               <a id="forkme_banner" href="https://github.com/gardr">View on GitHub</a>
-              <h1 class="mtn"><a href="../index.html">The Garðr Projects</a></h1>
+              <h1 class="mtn">The Garðr Projects</h1>
             </div>
           </div>
         </div>
@@ -46,11 +49,13 @@
         <div class="mod">
           <div class="inner">
             <div class="bd">
-
-            <h2>gardr-iframe-params</h2>
-            <p>
-            	asdasdasdasd
-            </p>
+             <h1>Safe embedding with Garðr JavaScript library</h1> 
+             <p>You can use the JS library for any type of content you need to enclose in an iframe. It can be advertisements or other third party widgets you need to isolate from your own document.               
+             </p>
+             <pre class="prettyprint linenums js">
+              // sample code will come here
+             </pre>
+             <p><a href="http://github.com/gardr/gardr">Source code</a></p>
             </div>
           </div>
         </div>
@@ -61,5 +66,11 @@
         View all <a href="https://github.com/gardr/">Garðr projects on GitHub</a> | Created October 2013
       </p>
     </footer>
+    <script src="js/prettify.js"></script>
+    <script type="text/javascript">
+    (function(){
+      prettyPrint()
+    }());
+    </script>
   </body>
 </html>
