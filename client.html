@@ -49,13 +49,59 @@
         <div class="mod">
           <div class="inner">
             <div class="bd">
-             <h1>Safe embedding with Garðr JavaScript library</h1> 
-             <p>You can use the JS library for any type of content you need to enclose in an iframe. It can be advertisements or other third party widgets you need to isolate from your own document.               
-             </p>
-             <pre class="prettyprint linenums js">
+             <h1>The Garðr JavaScript library</h1> 
+             <p>The client library tries to follow the <a href="http://www.iab.net/safeframe">IAB Safe Frame initiative</a> when it comes to naming and architecture.</p>
+             <h2>Ext and host</h2>
+             <p>The safe frame initiative has the concepts of <em>ext</em> and <em>host</em>, were <em>ext</em> is the library that goes into the Iframe and <em>host</em> is the script which runs on the host site.</p>
+             <!-- pre class="prettyprint js">
               // sample code will come here
+             </pre-->
+             <h2>Adding gardr to your project</h2>
+             <p>Add dependencies</p>
+             <p>If you don't have a package.json
+             <pre class="prettyprint js">
+             $ npm init
              </pre>
-             <p><a href="http://github.com/gardr/gardr">Source code</a></p>
+             </p>
+             <p>Add the host and ext modules as a dependency</p>
+             <pre class="prettyprint js">
+             $ npm install --save gardr-host gardr-ext
+             </pre>
+             <h2>Adding plugins</h2>
+             <p>Simply install like a regular dependency</p>
+             <pre class="prettyprint js">
+             $ npm install --save gardr-someFeature-plugin
+             </pre>
+             <h2>Building bundles</h2>
+             <p>Take a look at the `browserify` task in package.json. It uses [browserify](https://github.com/substack/node-browserify) to generate a static browser-version of the files in /lib.</p>
+             <pre class="prettyprint js">
+             $ npm run browserify
+             </pre>
+             <p>You can choose to make your own bunles using CommonJS, or transform it to an [UMD module](https://github.com/umdjs/umd) using the `--standalone` (or `-s`) argument to load it with an AMD loader or `window.gardrHost`.</p>
+             <pre class="prettyprint js">
+             $ browserify -s gardrHost lib/hostBundle.js > browserified/hostBundle.js
+             </pre>
+             <p>If you want source maps to make debuggin the code easier, add `--debug` as browserify argument. Browserify only adds source maps as an inline comment. So if you want and external source map, use [exorcist](https://github.com/thlorenz/exorcist) to extract it:</p>
+             <pre class="prettyprint js">
+             $ browserify lib/hostBundle.js --debug | exorcist browserified/hostBundle.js.map > browserified/hostBundle.js
+             </pre>
+
+             <h2>Logging</h2>
+             <p>Debugging can be done by configuring logging to either the browser console or as an overlay inside the iframes rendered by Garðr.</p>
+             <p>You can turn on logging by adding an url-fragment with log level: #loglevel=4
+             </p>
+             <p>By default it will display an overlay inside each banner with the log output. If the banner isn't visible, you can output to console by using:<br>
+             <pre class="prettyprint">
+             #loglevel=4&logto=console</pre>
+             </p>
+             <p>*NB!* If the banner injects another iframe we have no good way of catching errors :(</p>
+             <h2>No support for IE7 or older</h2>
+             <p>We have very few IE7 users, and some of the techniques used in Garðr (like postMessage) require many dirty hacks to work in IE7.</p>
+             <h2>Polyfills required for IE8+ support</h2>
+             <p>To keep the code minimal for modern browsers (mobile), we use some new features that came in EcmaScript 5. They are easy to implement in older browsers using a few simple polyfills. You can include it with a conditional-comment, so only users with old IE versions download the extra script. See the iframe html for an example.</p>
+             <p>[ES5-shim](https://npmjs.org/package/es5-shim) You do not need a sham (unsafe polyfills).</p>
+             <h2>Samples in the wild</h2>
+             <p>All of the display adverts on [m.finn.no](http://m.finn.no/) are using Garðr to safely embed responsive adverts written in HTML, CSS and JS.</p>
             </div>
           </div>
         </div>
