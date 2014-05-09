@@ -49,8 +49,14 @@
         <div class="mod">
           <div class="inner">
             <div class="bd">
-             <h1>The Garðr JavaScript library</h1> 
-             <p>The client library tries to follow the <a href="http://www.iab.net/safeframe">IAB Safe Frame initiative</a> when it comes to naming and architecture.</p>
+             <h1>The Garðr JavaScript library</h1>
+             <!--
+Removes the need for friendly iframes support in delivery systems and supports both HTML, Image and Flash based adverts.
+The iframe should be hosted on a different domain to enable security-features in the browser that prevents third party
+content to insert content or get user info from the parent page. postMessage is used for cross-domain communication
+between the frames.
+
+             -->
              <h2>Ext and host</h2>
              <p>The safe frame initiative has the concepts of <em>ext</em> and <em>host</em>, were <em>ext</em> is the library that goes into the Iframe and <em>host</em> is the script which runs on the host site.</p>
              <!-- pre class="prettyprint js">
@@ -85,7 +91,6 @@
              <pre class="prettyprint js">
              $ browserify lib/hostBundle.js --debug | exorcist browserified/hostBundle.js.map > browserified/hostBundle.js
              </pre>
-
              <h2>Logging</h2>
              <p>Debugging can be done by configuring logging to either the browser console or as an overlay inside the iframes rendered by Garðr.</p>
              <p>You can turn on logging by adding an url-fragment with log level: #loglevel=4
