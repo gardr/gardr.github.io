@@ -1,85 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">  
-    <meta name="description" content="gardr.github.io : website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-    <title>The Garðr Projects</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="http://dev.finncdn.no/bb/latest/css/so/so_core.css">
-<!--    <link rel="stylesheet" type="text/css" media="screen" href="http://cache.finn.no/styles/so/components/components.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="http://cache.finn.no/styles/so/finn.css">-->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
-    <!--[if IE 9 ]>
-      <link rel="stylesheet" type="text/css" media="screen" href="http://cache.finn.no/styles/so/ie9.css">
-    <![endif]-->
-    <!--[if IE 8 ]>
-      <link rel="stylesheet" type="text/css" media="screen" href="http://cache.finn.no/styles/so/ie8.css">
-    <![endif]-->
-    <!--[if lte IE 8]>
-      <link rel="stylesheet" type="text/css" media="screen" href="http://cache.finn.no/styles/so/ie.css">
-<![endif]-->   
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-45931135-1', 'gardr.github.io');
-  ga('send', 'pageview');
-
-</script>
-  </head>
-  <body class="bg-white">
-    <div class="mod header contrast mbn mrn">
-      <div class="inner">
-        <div class="bd relative overflowify gardr-header">
-          <div class="liquid">
-            <div class="body">
-              <a id="forkme_banner" href="https://github.com/gardr">View on GitHub</a>
-              <h1 class="mtn">The Garðr Projects</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+<head>
+    <title>The Garðr project</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://gardr.org/client/splash.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="http://gardr.org/client/logo_big.png" alt="Garðr logo" />
+        <!-- <h1>Garðr <small>project</small></h1> -->
+        <p>"Display-ads inside containers."</p>
+        <br />
+        <a href="/docs" class="btn">
+            I want to know more
+        </a>
+        <ul>
+            <li><a href="/docs" title="Documentation">Documentation</a></li>
+            <li><a href="http://validator.gardr.org" title="Validator">Validator</a></li>
+            <li><a href="http://github.com/inma-no" title="Specification">Specification</a></li>
+            <li style="float:right"><a href="http://www.flickr.com/photos/91426379@N00/8891575026/">Photo by mebrett</a></li>
+        </ul>
     </div>
-
-    <div class="page liquid bg-white mainc">
-      <div class="body">
-        <div class="mod">
-          <div class="inner">
-            <div class="bd">
-             <h1>Garðr - the secure way of adding external content</h1> 
-             <p>Follow <a href="//twitter.com/gardr_project">@gardr_project</a> to get the latest news about the project.</p>
-             <p>Adding external content to your site puts site owners in a position where they no longer are in control of wether their site is available or not.</p>
-             <p class="h2 centerify pvm">
-              View the presentation <a href="https://docs.google.com/presentation/d/1ia90ENFAPAQYvCQtWqXdSCtUV1xf1MBQUo3QIxBHD_U/edit?pli=1#slide=id.p">Garðr - at a glance</a> for a quick intro
-             </p>
-             <p>The Garðr projects aim to provide a safer way to add external content such as display advertisments to a site.</p>
-             <h2 class="slightlylargerlargefont">JavaScript Client library
-             </h2>
-             <p>To safely embed third party content we have created a small library for rendering external content inside an iframe to ensure that the host site always stays up. It also helps improve rendering performance by loading the external content asynchronus without effecting the host site.<br>
-             Check out the <a href="https://github.com/gardr/gardr">sample project</a> to see a quick demo of how to assemble Garðr for your site!</p>
-             <p>The library is actually two modules</p>
-             <ul>
-               <li><a href="https://github.com/gardr/host">Host</a> - the script on the host page</li>
-               <li><a href="https://github.com/gardr/ext">Ext</a> - the script whichruns inside the Iframe</li>
-             </ul>
-             </p>
-             <hr>
-             <h2 class="slightlylargerlargefont">
-              <a href="http://github.com/gardr/validator-web">Validator Web Application</a>
-             </h2>
-             <p>The validator web application helps validate your content according to the rules you specify. Creators can validate their content to ensure it will render fast and without breaking the host site. It is designed to help the transition to HTML based rich media advertisements.</p>
-             <p>Try the <a href="http://validator.finn.no">the validator</a> online rigth here!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer bg-gardr pal contrast">
-      <p>
-        View all <a href="https://github.com/gardr/">Garðr projects on GitHub</a> | Created October 2013
-      </p>
-    </footer>
-  </body>
+</body>
 </html>
