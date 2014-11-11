@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>The Garðr project</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-    <link href='http://gardr.org/client/splash.css' rel='stylesheet' type='text/css' />
-</head>
-<body>
-    <div class="container">
-        <img class="logo" src="http://gardr.org/client/logo_big.png" alt="Garðr logo" />
-        <!-- <h1>Garðr <small>project</small></h1> -->
-        <p>"Display-ads inside containers."</p>
-        <br />
-        <a href="/docs" class="btn">
-            I want to know more
-        </a>
-        <ul>
-            <li><a href="/docs" title="Documentation">Documentation</a></li>
-            <li><a href="http://validator.gardr.org" title="Validator">Validator</a></li>
-            <li><a href="http://github.com/inma-no" title="Specification">Specification</a></li>
-            <li style="float:right"><a href="http://www.flickr.com/photos/91426379@N00/8891575026/">Photo by mebrett</a></li>
-        </ul>
-    </div>
-</body>
-</html>
+---
+layout: default
+title: Developers at FINN blogging about tech
+---
+INDEX
+<div class="posts">
+    {% for post in site.posts %}
+    <article class="post">
+        <h1 class="post-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </h1>
+
+        {{ post.content }}
+    </article>
+    {% endfor %}
+</div>
+
+{% include archive.html offset=1 %}

@@ -1,0 +1,24 @@
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            The Garðr project
+tagline:          
+url:              http://gardr.github.io/
+paginate:         1
+paginate_path:    "page/:num"
+baseurl:          "/"
+author:
+  name:           Garðr Project
+  url:            https://github.com/gardr/
+  twitter:        gardr
+
+# Custom vars
+version:          0.0.1
+github:
+  repo:           https://github.com/gardr/gardr.github.io
+gems:
+  - jekyll-redirect-fromhighlighter: pygments
+safe: true
+lsi: false

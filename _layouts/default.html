@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body class="bg-white">
+    <div class="mod header contrast mbn mrn">
+      <div class="inner">
+        <div class="bd relative overflowify gardr-header">
+          <div class="liquid">
+            <div class="body">
+              <a id="forkme_banner" href="https://github.com/gardr">View on GitHub</a>
+              <a href="/" class="h1 mtn">{{ site.title }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page liquid bg-white mainc">
+      <div class="body">
+        <div class="mod">
+          <div class="inner">
+            <div class="bd">
+             {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>
+
