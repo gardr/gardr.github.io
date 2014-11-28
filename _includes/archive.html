@@ -1,11 +1,16 @@
-<section class="postarchive">
-
-  <h2>ToC</h2>
-
-  {% for post in site.posts offset:include.offset %}
-    <div class="postarchive-post">
-      <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date }}</time></small>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </div>
-  {% endfor %}
+<hr>
+<section class="mod">
+	<div class="inner">
+		<div class="bd">
+		  <h2>Table of contents:</h2>
+		  <ul class="phl">
+		  {% for post in site.posts offset:include.offset %}
+		    <li>
+		      <!--<small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date }}</time></small>-->
+		      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		    </li>
+		  {% endfor %}
+		  </ul>
+		</div>
+	</div>
 </section>

@@ -1,20 +1,32 @@
 ---
 layout: default
-title: Developers at FINN blogging about tech
+title: Gardr homepage intro
 ---
-INDEX
-<div class="posts">
+
+<div class="mod">
+    <div class="inner  bg-opaque">
+        <div class="bd">
+            <p>
+            This is the documentation web site<br>
+            This is the documentation web site<br>
+            This is the documentation web site<br>
+            This is the documentation web site<br>
+            This is the documentation web site<br>
+            This is the documentation web site<br>
+
+        </div>
+    </div>
+</div>
+<!--
     {% for post in site.posts %}
-    <article class="post">
-        <h1 class="post-title">
+    <article>
+        <h1>
             <a href="{{ site.baseurl }}{{ post.url }}">
                 {{ post.title }}
             </a>
         </h1>
-
         {{ post.content }}
     </article>
     {% endfor %}
-</div>
-
-{% include archive.html offset=1 %}
+-->
+{% include archive.html %}

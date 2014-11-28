@@ -6,7 +6,6 @@ tags:
 - hosts
 ---
 
-# Ext and host
 The safe frame initiative has the concepts of _ext_ and _host_, were _ext_ is the library that goes into the Iframe and _host_ is the script which runs on the host site.
 
 
