@@ -29,7 +29,7 @@ https://github.com/inma-no/advertsspec/blob/master/specification.md
 
 --
 
-# Specification for HTML based adverts
+## Specification for HTML based adverts
 
 This is the specification for both the HTML banners and image banners. Inline is an advertising format used across all devices (mobile, tablet and desktop). As for now, HTML is recommended as it will be fully responsive across all screens.
 --
