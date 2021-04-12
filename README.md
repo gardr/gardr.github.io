@@ -1,1 +1,1 @@
-Website for the Garðr projects
+Discontinued and archived
